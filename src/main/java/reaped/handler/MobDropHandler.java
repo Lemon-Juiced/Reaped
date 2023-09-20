@@ -37,7 +37,6 @@ public class MobDropHandler {
         if(attacker instanceof Player playerEntity){
             Item itemInHand = playerEntity.getItemInHand(InteractionHand.MAIN_HAND).getItem();
 
-            // TODO Figure out if this is broken
             // Increments the mobHeadDropChance by 5% per Reaper Armor Piece
             if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_HOOD.get()) mobHeadDropChance += 5;
             if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_CLOAK.get()) mobHeadDropChance += 5;
