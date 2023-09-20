@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reaped:nether_steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "reaped:nether_steel_nugget",
+    "count": 9
+  }
+}

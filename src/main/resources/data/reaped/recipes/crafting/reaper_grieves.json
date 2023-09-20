@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:black_cloth"
+    }
+  },
+  "result": {
+    "item": "reaped:reaper_grieves",
+    "count": 1
+  }
+}

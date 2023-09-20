@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#n#",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:black_cloth"
+    },
+    "n": {
+      "item": "reaped:nether_steel_nugget"
+    }
+  },
+  "result": {
+    "item": "reaped:reaper_cloak",
+    "count": 1
+  }
+}

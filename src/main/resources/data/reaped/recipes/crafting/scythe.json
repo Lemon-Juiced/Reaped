@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n##",
+    "n /",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:nether_steel_ingot"
+    },
+    "n": {
+      "item": "reaped:nether_steel_nugget"
+    },
+    "/": {
+      "item": "reaped:wooden_staff"
+    }
+  },
+  "result": {
+    "item": "reaped:scythe",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reaped:item/nether_steel_alloy_stack"
+  }
+}

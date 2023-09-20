@@ -1,0 +1,22 @@
+{
+  "item.reaped.black_cloth": "Black Cloth",
+  "item.reaped.nether_steel_alloy_stack": "Nether Steel Alloy Stack",
+  "item.reaped.nether_steel_ingot": "Nether Steel Ingot",
+  "item.reaped.nether_steel_nugget": "Nether Steel Nugget",
+  "item.reaped.wooden_staff": "Wooden Staff",
+
+  "item.reaped.scythe": "Scythe",
+
+  "item.reaped.reaper_hood": "Reaper Hood",
+  "item.reaped.reaper_cloak": "Reaper Cloak",
+  "item.reaped.reaper_grieves": "Reaper Grieves",
+  "item.reaped.reaper_boots": "Reaper Boots",
+
+  "tooltip.reaped.scythe_1": "Decapitating Weapon",
+  "tooltip.reaped.scythe_2": "+5% Chance to Behead Mobs Per Armor Piece of Reaper Armor Set",
+  "tooltip.reaped.reaper_armor_1": "Full Set Grants Speed to the Wearer",
+  "tooltip.reaped.reaper_armor_2": "+5% Beheading Chance Per Armor Piece to Scythe Drops",
+
+  "itemGroup.reaped.items": "Reaped: Items",
+  "itemGroup.reaped.arsenal": "Reaped: Arsenal"
+}
