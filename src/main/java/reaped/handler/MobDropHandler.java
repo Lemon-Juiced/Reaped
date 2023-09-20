@@ -38,10 +38,10 @@ public class MobDropHandler {
             Item itemInHand = playerEntity.getItemInHand(InteractionHand.MAIN_HAND).getItem();
 
             // Increments the mobHeadDropChance by 5% per Reaper Armor Piece
-            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_HOOD.get()) mobHeadDropChance += 5;
-            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_CLOAK.get()) mobHeadDropChance += 5;
+            if (playerEntity.getInventory().getArmor(3).getItem() == ModItems.REAPER_HOOD.get()) mobHeadDropChance += 5;
+            if (playerEntity.getInventory().getArmor(2).getItem() == ModItems.REAPER_CLOAK.get()) mobHeadDropChance += 5;
             if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_GRIEVES.get()) mobHeadDropChance += 5;
-            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_BOOTS.get()) mobHeadDropChance += 5;
+            if (playerEntity.getInventory().getArmor(0).getItem() == ModItems.REAPER_BOOTS.get()) mobHeadDropChance += 5;
 
             if (itemInHand instanceof ScytheItem){
                 if(entity instanceof Creeper && random.nextInt(0, 100) < mobHeadDropChance)
