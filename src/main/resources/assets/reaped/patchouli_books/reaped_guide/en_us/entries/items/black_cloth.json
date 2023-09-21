@@ -1,0 +1,16 @@
+{
+  "name": "Black Cloth",
+  "icon": "reaped:black_cloth",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Black Cloth is one of the most important crafting items in Reaped. It is used in all pieces of the Reaper Armor Set."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/black_cloth",
+      "text": "Above is the crafting recipe to acquire Black Cloth."
+    }
+  ]
+}

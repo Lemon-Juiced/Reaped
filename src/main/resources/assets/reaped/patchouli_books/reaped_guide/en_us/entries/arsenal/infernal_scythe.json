@@ -1,0 +1,16 @@
+{
+  "name": "Infernal Scythe",
+  "icon": "reaped:infernal_scythe",
+  "category": "reaped:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Infernal Scythe is a rather expensive weapon item in Reaped. For each piece of Reaper Armor the chance for a head to drops increases by 5%, starting from 0%.$(br)\"It can be used to decapitate monsters very quickly.\" - The Grim Reaper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/infernal_scythe",
+      "text": "Above is the crafting recipe to acquire the Infernal Scythe."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Reaped Guide",
+  "landing_text": "Welcome To Reaped$(br)By: Lemon_Juiced & Scalar Team",
+  "version": 1,
+  "creative_tab": "reaped:reaped_items",
+  "use_resource_pack": true
+}

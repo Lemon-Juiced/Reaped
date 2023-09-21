@@ -37,6 +37,9 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+            // These lines are for Patchouli
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
@@ -64,6 +67,7 @@ repositories {
     maven { url = "https://modmaven.dev"}
     maven { url = "https://minecraft.curseforge.com/api/maven/"}
     maven { url = "https://www.cursemaven.com"}
+    maven { url 'https://maven.blamejared.com' }
 }
 
 dependencies {
@@ -74,6 +78,10 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.0.0.15")
     runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.0.0.15")
     runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.0.0.15")
+
+    //Patchouli
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE")
 }
 
 tasks.named('processResources', ProcessResources).configure {

@@ -1,0 +1,16 @@
+{
+  "name": "Wooden Staff",
+  "icon": "reaped:wooden_staff",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Wooden Staff is one of the most important crafting items in Reaped. It is used in both Scythes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/wooden_staff",
+      "text": "Above is the crafting recipe to acquire the Wooden Staff."
+    }
+  ]
+}

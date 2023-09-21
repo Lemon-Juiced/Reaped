@@ -1,0 +1,16 @@
+{
+  "name": "Iron Scythe",
+  "icon": "reaped:iron_scythe",
+  "category": "reaped:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Iron Scythe is a fairly inexpensive utility item in Reaped.$(br)\"It can be used to clear out large areas of vegetation very quickly.\" - The Grim Gardener"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/iron_scythe",
+      "text": "Above is the crafting recipe to acquire the Iron Scythe."
+    }
+  ]
+}

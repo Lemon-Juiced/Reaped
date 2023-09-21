@@ -1,0 +1,31 @@
+{
+  "name": "Reaper Armor",
+  "icon": "reaped:reaper_hood",
+  "category": "reaped:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Reaper armor set is a fairly expensive Armor Set in Reaped. For each piece of Reaper Armor the chance for a head to drop, with the Infernal Scythe, increases by 5%, starting from 0%."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/reaper_hood",
+      "text": "Above is the crafting recipe to acquire the Reaper Hood."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/reaper_cloak",
+      "text": "Above is the crafting recipe to acquire the Reaper Cloak."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/reaper_grieves",
+      "text": "Above is the crafting recipe to acquire the Reaper Grieves."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/reaper_boots",
+      "text": "Above is the crafting recipe to acquire the Reaper Boots."
+    }
+  ]
+}

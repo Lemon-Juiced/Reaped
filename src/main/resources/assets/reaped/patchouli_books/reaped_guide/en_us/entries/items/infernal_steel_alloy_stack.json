@@ -1,0 +1,21 @@
+{
+  "name": "Infernal Steel Alloy Stack",
+  "icon": "reaped:infernal_steel_alloy_stack",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Infernal Steel Alloy Stack is the item used in the creation of Infernal Steel Ingots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/infernal_steel_alloy_stack",
+      "text": "Above is the crafting recipe to acquire Infernal Steel Alloy Stacks."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "reaped:smelting/infernal_steel_ingot",
+      "text": "Above is the smelting recipe to acquire Infernal Steel Ingots from Infernal Steel Alloy Stacks."
+    }
+  ]
+}

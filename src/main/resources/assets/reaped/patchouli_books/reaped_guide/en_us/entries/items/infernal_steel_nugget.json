@@ -1,0 +1,21 @@
+{
+  "name": "Infernal Steel Nugget",
+  "icon": "reaped:infernal_steel_nugget",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Infernal Steel Nugget is one of the most important crafting items in Reaped. It is used not only in the Infernal Steel Scythe, but also in the Reaper Armor Set."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/infernal_steel_nuggets",
+      "text": "Above is the crafting recipe to acquire Infernal Steel Nuggets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/infernal_steel_ingot",
+      "text": "You can also convert your Infernal Steel Nuggets back to Infernal Steel Ingots as seen above."
+    }
+  ]
+}
