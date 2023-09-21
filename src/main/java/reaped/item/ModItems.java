@@ -10,6 +10,7 @@ import reaped.Reaped;
 import reaped.item.custom.item.IronScytheItem;
 import reaped.item.custom.item.ReaperArmorItem;
 import reaped.item.custom.item.InfernalScytheItem;
+import reaped.item.custom.item.ReaperCloakItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Reaped.MOD_ID);
@@ -24,7 +25,7 @@ public class ModItems {
     public static final RegistryObject<Item> INFERNAL_SCYTHE = ITEMS.register("infernal_scythe", () -> new InfernalScytheItem(new Item.Properties()));
 
     public static final RegistryObject<Item> REAPER_HOOD = ITEMS.register("reaper_hood", () -> new ReaperArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> REAPER_CLOAK = ITEMS.register("reaper_cloak", () -> new ReaperArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> REAPER_CLOAK = ITEMS.register("reaper_cloak", () -> new ReaperCloakItem(new Item.Properties()));
     public static final RegistryObject<Item> REAPER_GRIEVES = ITEMS.register("reaper_grieves", () -> new ReaperArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> REAPER_BOOTS = ITEMS.register("reaper_boots", () -> new ReaperArmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 

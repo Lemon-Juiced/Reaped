@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The Reaper armor set is a fairly expensive Armor Set in Reaped. For each piece of Reaper Armor the chance for a head to drop, with the Infernal Scythe, increases by 5%, starting from 0%."
+      "text": "The Reaper armor set is a fairly expensive Armor Set in Reaped. For each piece of Reaper Armor the chance for a head to drop, with the Infernal Scythe, increases by 5%, starting from 0%. Additionally, a full set of Reaper Armor grants the wearer a speed buff as another trade off for its low protection and durability."
     },
     {
       "type": "patchouli:crafting",
