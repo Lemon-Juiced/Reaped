@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "reaped:item/scythe"
+    "layer0": "reaped:item/iron_scythe"
   }
 }

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "reaped:nether_steel_alloy_stack"
+    "item": "reaped:infernal_steel_alloy_stack"
   },
-  "result": "reaped:nether_steel_ingot",
+  "result": "reaped:infernal_steel_ingot",
   "experience": 0.1,
   "cookingtime": 400
 }

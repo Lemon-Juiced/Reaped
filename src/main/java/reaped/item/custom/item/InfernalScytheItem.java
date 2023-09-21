@@ -11,9 +11,9 @@ import reaped.item.custom.tier.ModTiers;
 
 import java.util.List;
 
-public class ScytheItem extends SwordItem {
+public class InfernalScytheItem extends SwordItem {
 
-    public ScytheItem(Properties properties) {
+    public InfernalScytheItem(Properties properties) {
         super(ModTiers.SCYTHE_TIER, 4, -2.7f, properties);
     }
 
@@ -24,7 +24,7 @@ public class ScytheItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        components.add(Component.translatable("tooltip.reaped.scythe_1").withStyle(ChatFormatting.RED));
-        components.add(Component.translatable("tooltip.reaped.scythe_2").withStyle(ChatFormatting.BLUE));
+        components.add(Component.translatable("tooltip.reaped.infernal_scythe_1").withStyle(ChatFormatting.RED));
+        components.add(Component.translatable("tooltip.reaped.infernal_scythe_2").withStyle(ChatFormatting.BLUE));
     }
 }

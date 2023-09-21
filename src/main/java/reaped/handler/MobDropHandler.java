@@ -1,7 +1,6 @@
 package reaped.handler;
 
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Skeleton;
@@ -17,7 +16,7 @@ import net.minecraft.world.level.GameRules;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import reaped.item.ModItems;
-import reaped.item.custom.item.ScytheItem;
+import reaped.item.custom.item.InfernalScytheItem;
 
 import java.util.Random;
 
@@ -43,7 +42,7 @@ public class MobDropHandler {
             if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_GRIEVES.get()) mobHeadDropChance += 5;
             if (playerEntity.getInventory().getArmor(0).getItem() == ModItems.REAPER_BOOTS.get()) mobHeadDropChance += 5;
 
-            if (itemInHand instanceof ScytheItem){
+            if (itemInHand instanceof InfernalScytheItem){
                 if(entity instanceof Creeper && random.nextInt(0, 100) < mobHeadDropChance)
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.CREEPER_HEAD)));
 

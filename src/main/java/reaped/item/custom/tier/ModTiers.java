@@ -24,5 +24,5 @@ import java.util.List;
  * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
  */
 public class ModTiers {
-    public static final Tier SCYTHE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 8.0F, 5.0F, 15, BlockTags.SWORD_EFFICIENT, () -> Ingredient.of(ModItems.NETHER_STEEL_INGOT.get())), new ResourceLocation(Reaped.MOD_ID, "scythe"), List.of(Tiers.NETHERITE), List.of());
+    public static final Tier SCYTHE_TIER = TierSortingRegistry.registerTier(new ForgeTier(5, -1, 8.0F, 5.0F, 15, BlockTags.SWORD_EFFICIENT, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get())), new ResourceLocation(Reaped.MOD_ID, "scythe"), List.of(Tiers.NETHERITE), List.of());
 }

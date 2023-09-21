@@ -75,7 +75,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         protectionFunctionForType.put(ArmorItem.Type.CHESTPLATE, 3);
         protectionFunctionForType.put(ArmorItem.Type.HELMET, 1);
     }), 25, SoundEvents.ARMOR_EQUIP_LEATHER, 1.0F, 0.0F, () -> {
-        return Ingredient.of(ModItems.NETHER_STEEL_INGOT.get());
+        return Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get());
     });
 
     public static final StringRepresentable.EnumCodec<net.minecraft.world.item.ArmorMaterials> CODEC = StringRepresentable.fromEnum(net.minecraft.world.item.ArmorMaterials::values);

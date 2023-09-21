@@ -7,17 +7,17 @@
   ],
   "key": {
     "#": {
-      "item": "reaped:nether_steel_ingot"
+      "item": "minecraft:iron_ingot"
     },
     "n": {
-      "item": "reaped:nether_steel_nugget"
+      "item": "minecraft:iron_nugget"
     },
     "/": {
       "item": "reaped:wooden_staff"
     }
   },
   "result": {
-    "item": "reaped:scythe",
+    "item": "reaped:iron_scythe",
     "count": 1
   }
 }

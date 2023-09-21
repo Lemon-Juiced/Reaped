@@ -1,20 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#n#",
-    "# #",
-    "# #"
+    "n##",
+    "n /",
+    " / "
   ],
   "key": {
     "#": {
-      "item": "reaped:black_cloth"
+      "item": "reaped:infernal_steel_ingot"
     },
     "n": {
       "item": "reaped:infernal_steel_nugget"
+    },
+    "/": {
+      "item": "reaped:wooden_staff"
     }
   },
   "result": {
-    "item": "reaped:reaper_cloak",
+    "item": "reaped:infernal_scythe",
     "count": 1
   }
 }
