@@ -36,14 +36,13 @@ public class IronScytheItem extends DiggerItem {
 
     private static final Set scytheEffectiveBlocks = Sets.newHashSet(ItemTags.LEAVES, BlockTags.CROPS, Blocks.NETHER_WART, Blocks.RED_MUSHROOM, Blocks.BROWN_MUSHROOM, Blocks.SUGAR_CANE, Blocks.TALL_GRASS, Blocks.VINE, Blocks.LILY_PAD, BlockTags.SMALL_FLOWERS);
 
-
     public IronScytheItem(Properties properties) {
-        super(2,-1.4F, Tiers.IRON, BlockTags.MINEABLE_WITH_HOE, properties);
+        super(Tiers.IRON, BlockTags.MINEABLE_WITH_HOE, properties);
     }
 
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
-        if (state.is(BlockTags.LEAVES) || scytheEffectiveBlocks.contains(state)) return this.speed;
+        if (state.is(BlockTags.LEAVES) || scytheEffectiveBlocks.contains(state)) return Items.IRON_HOE.getDestroySpeed(stack, state);
         return 1.0F;
     }
 
@@ -52,32 +51,32 @@ public class IronScytheItem extends DiggerItem {
         boolean scytheUsed = false;
         if (!(entityLiving instanceof Player player)) return false;
 
-        if ( state.is(BlockTags.LEAVES) || state.getBlock() instanceof LeavesBlock) {
+        if (state.is(BlockTags.LEAVES) || state.getBlock() instanceof LeavesBlock) {
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
                     for (int k = -1; k <= 1; k++) {
-                        BlockState checkBlock = world.getBlockState(pos.offset(i,j,k));
+                        BlockState checkBlock = world.getBlockState(pos.offset(i, j, k));
                         if (checkBlock.is(BlockTags.LEAVES) || checkBlock.getBlock() instanceof LeavesBlock) {
-                            if (checkBlock.canHarvestBlock(world, pos.offset(i,j,k), player)) {
-                                world.destroyBlock(pos.offset(i,j,k), true);
+                            if (checkBlock.getBlock().canHarvestBlock(checkBlock, world, pos.offset(i, j, k), player)) {
+                                world.destroyBlock(pos.offset(i, j, k), true);
                             }
                             scytheUsed = true;
                         }
                     }
                 }
             }
-            if (scytheUsed) stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+            if (scytheUsed) stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
             return scytheUsed;
         }
 
         if ((state.getBlock() instanceof WaterlilyBlock)) {
             for (int i = -2; i <= 2; i++) {
                 for (int j = -2; j <= 2; j++) {
-                    Block checkBlock = world.getBlockState(pos.offset(i,0,j)).getBlock();
-                    BlockState meta = world.getBlockState(pos.offset(i,0,j));
+                    Block checkBlock = world.getBlockState(pos.offset(i, 0, j)).getBlock();
+                    BlockState meta = world.getBlockState(pos.offset(i, 0, j));
                     if (checkBlock instanceof WaterlilyBlock) {
-                        if (checkBlock.canHarvestBlock(meta, world, pos.offset(i,0,j), player)) {
-                            world.destroyBlock(pos.offset(i,0,j), true);
+                        if (checkBlock.canHarvestBlock(meta, world, pos.offset(i, 0, j), player)) {
+                            world.destroyBlock(pos.offset(i, 0, j), true);
                         }
                         scytheUsed = true;
                     }
@@ -88,10 +87,10 @@ public class IronScytheItem extends DiggerItem {
         if (!(state.getBlock() instanceof WaterlilyBlock)) {
             for (int i = -2; i <= 2; i++) {
                 for (int j = -2; j <= 2; j++) {
-                    Block checkBlock = world.getBlockState(pos.offset(i,0,j)).getBlock();
+                    Block checkBlock = world.getBlockState(pos.offset(i, 0, j)).getBlock();
                     if (checkBlock instanceof BushBlock && !(checkBlock instanceof WaterlilyBlock)) {
-                        if (checkBlock.canHarvestBlock(world.getBlockState(pos.offset(i,0,j)), world,  pos.offset(i,0,j), player)) {
-                            world.destroyBlock(pos.offset(i,0,j), true);
+                        if (checkBlock.canHarvestBlock(world.getBlockState(pos.offset(i, 0, j)), world, pos.offset(i, 0, j), player)) {
+                            world.destroyBlock(pos.offset(i, 0, j), true);
                         }
                         scytheUsed = true;
                     }
@@ -99,7 +98,7 @@ public class IronScytheItem extends DiggerItem {
             }
         }
 
-        if (scytheUsed) stack.hurtAndBreak(1, player, (playerEntity) -> playerEntity.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+        if (scytheUsed) stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
         return scytheUsed;
     }
 
@@ -109,7 +108,7 @@ public class IronScytheItem extends DiggerItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> components, TooltipFlag tooltipFlag) {
         components.add(Component.translatable("tooltip.reaped.iron_scythe_1"));
         components.add(Component.translatable("tooltip.reaped.iron_scythe_2"));
     }

@@ -14,16 +14,11 @@ import java.util.List;
 public class InfernalScytheItem extends SwordItem {
 
     public InfernalScytheItem(Properties properties) {
-        super(ModTiers.SCYTHE_TIER, 4, -2.7f, properties);
+        super(ModTiers.SCYTHE_TIER, properties);
     }
 
     @Override
-    public boolean isFireResistant() {
-        return true;
-    }
-
-    @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> components, TooltipFlag tooltipFlag) {
         components.add(Component.translatable("tooltip.reaped.infernal_scythe_1").withStyle(ChatFormatting.RED));
         components.add(Component.translatable("tooltip.reaped.infernal_scythe_2").withStyle(ChatFormatting.BLUE));
     }

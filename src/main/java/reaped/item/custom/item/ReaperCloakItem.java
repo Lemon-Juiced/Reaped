@@ -2,12 +2,14 @@ package reaped.item.custom.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import reaped.item.custom.tier.ModArmorMaterials;
 
 public class ReaperCloakItem extends ReaperArmorItem {
@@ -16,11 +18,15 @@ public class ReaperCloakItem extends ReaperArmorItem {
     }
 
     @Override
-    public void onArmorTick(ItemStack stack, Level level, Player player) {
-        if(hasCorrectArmorOn(player)){
-            if(hasFullSetOfArmorOn(player)){
-                if(!player.isCreative() && !player.isSpectator()) {
-                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1));
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        if (entity instanceof Player player) {
+            if (slotId >= 36 && slotId <= 39) { // Check if the slot is one of the armor slots
+                if (hasCorrectArmorOn(player)) {
+                    if (hasFullSetOfArmorOn(player)) {
+                        if (!player.isCreative() && !player.isSpectator()) {
+                            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 1));
+                        }
+                    }
                 }
             }
         }
@@ -36,7 +42,7 @@ public class ReaperCloakItem extends ReaperArmorItem {
     }
 
     private boolean hasCorrectArmorOn(Player player){
-        ArmorMaterial material = ModArmorMaterials.REAPER;
+        DeferredHolder<ArmorMaterial, ArmorMaterial> material = ModArmorMaterials.REAPER;
         if(player.getInventory().getArmor(0).getItem() == Items.AIR ||
                 (player.getInventory().getArmor(1).getItem() == Items.AIR) ||
                 (player.getInventory().getArmor(2).getItem() == Items.AIR) ||
@@ -49,6 +55,6 @@ public class ReaperCloakItem extends ReaperArmorItem {
         ArmorItem chestplate = ((ArmorItem)player.getInventory().getArmor(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmor(3).getItem());
 
-        return helmet.getMaterial() == material && chestplate.getMaterial() == material && leggings.getMaterial() == material && boots.getMaterial() == material;
+        return helmet.getMaterial().is(material) && chestplate.getMaterial().is(material) && leggings.getMaterial().is(material) && boots.getMaterial().is(material);
     }
 }

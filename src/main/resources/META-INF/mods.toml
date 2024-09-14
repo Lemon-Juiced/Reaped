@@ -11,9 +11,9 @@ authors="${mod_authors}"
 description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
-    modId="forge"
-    mandatory=true
-    versionRange="${forge_version_range}"
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
@@ -25,6 +25,6 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
     modId="patchouli"
     mandatory=false
-    versionRange="[1.20.1-80-FORGE,)"
+    versionRange="[1.21-87-NEOFORGE,)"
     ordering="NONE"
     side="BOTH"
