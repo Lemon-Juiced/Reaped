@@ -1,10 +1,10 @@
-package reaped.item.custom.tier;
+package lemon_juiced.reaped.item.custom.tier;
 
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
-import reaped.item.ModItems;
+import lemon_juiced.reaped.item.ModItems;
 
 
 /**

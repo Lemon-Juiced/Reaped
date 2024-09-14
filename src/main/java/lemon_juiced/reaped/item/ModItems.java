@@ -1,19 +1,19 @@
-package reaped.item;
+package lemon_juiced.reaped.item;
 
+import lemon_juiced.reaped.item.custom.item.InfernalScytheItem;
+import lemon_juiced.reaped.item.custom.item.IronScytheItem;
+import lemon_juiced.reaped.item.custom.item.ReaperCloakItem;
+import lemon_juiced.reaped.item.custom.tier.ModTiers;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import reaped.item.custom.item.IronScytheItem;
-import reaped.item.custom.item.ReaperArmorItem;
-import reaped.item.custom.item.InfernalScytheItem;
-import reaped.item.custom.item.ReaperCloakItem;
-import reaped.item.custom.tier.ModTiers;
+import lemon_juiced.reaped.item.custom.item.ReaperArmorItem;
 
 import java.util.function.Supplier;
 
-import static reaped.Reaped.MOD_ID;
+import static lemon_juiced.reaped.Reaped.MOD_ID;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(MOD_ID);

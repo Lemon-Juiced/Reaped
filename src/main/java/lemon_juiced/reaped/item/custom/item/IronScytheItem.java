@@ -1,4 +1,4 @@
-package reaped.item.custom.item;
+package lemon_juiced.reaped.item.custom.item;
 
 import com.google.common.collect.Sets;
 import net.minecraft.core.BlockPos;

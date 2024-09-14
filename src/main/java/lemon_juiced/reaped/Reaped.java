@@ -1,5 +1,8 @@
-package reaped;
+package lemon_juiced.reaped;
 
+import lemon_juiced.reaped.creativetab.ModCreativeTabs;
+import lemon_juiced.reaped.handler.MobDropHandler;
+import lemon_juiced.reaped.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -11,9 +14,6 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import reaped.creativetab.ModCreativeTabs;
-import reaped.handler.MobDropHandler;
-import reaped.item.ModItems;
 
 @Mod(Reaped.MOD_ID)
 public class Reaped {

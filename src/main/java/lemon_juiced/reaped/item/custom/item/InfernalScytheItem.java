@@ -1,13 +1,11 @@
-package reaped.item.custom.item;
+package lemon_juiced.reaped.item.custom.item;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
-import reaped.item.custom.tier.ModTiers;
+import lemon_juiced.reaped.item.custom.tier.ModTiers;
 
 import java.util.List;
 

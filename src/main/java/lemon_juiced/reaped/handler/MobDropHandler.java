@@ -1,5 +1,7 @@
-package reaped.handler;
+package lemon_juiced.reaped.handler;
 
+import lemon_juiced.reaped.item.ModItems;
+import lemon_juiced.reaped.item.custom.item.InfernalScytheItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
@@ -15,8 +17,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameRules;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
-import reaped.item.ModItems;
-import reaped.item.custom.item.InfernalScytheItem;
 
 import java.util.Random;
 
