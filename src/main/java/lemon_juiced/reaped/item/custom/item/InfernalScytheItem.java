@@ -20,4 +20,9 @@ public class InfernalScytheItem extends SwordItem {
         components.add(Component.translatable("tooltip.reaped.infernal_scythe_1").withStyle(ChatFormatting.RED));
         components.add(Component.translatable("tooltip.reaped.infernal_scythe_2").withStyle(ChatFormatting.BLUE));
     }
+
+    @Override
+    public boolean isDamageable(ItemStack stack) {
+        return false;
+    }
 }

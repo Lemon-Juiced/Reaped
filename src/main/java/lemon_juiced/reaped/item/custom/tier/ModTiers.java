@@ -19,5 +19,5 @@ import net.neoforged.neoforge.common.SimpleTier;
  * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
  */
 public class ModTiers {
-    public static final Tier SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, -1, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
+    public static final Tier SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
 }
