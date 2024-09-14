@@ -1,11 +1,11 @@
 package lemon_juiced.reaped.item.custom.item;
 
+import lemon_juiced.reaped.item.custom.tier.ModTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TooltipFlag;
-import lemon_juiced.reaped.item.custom.tier.ModTiers;
 
 import java.util.List;
 

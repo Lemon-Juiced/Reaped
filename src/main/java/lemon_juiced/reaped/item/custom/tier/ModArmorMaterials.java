@@ -1,5 +1,7 @@
 package lemon_juiced.reaped.item.custom.tier;
 
+import lemon_juiced.reaped.Reaped;
+import lemon_juiced.reaped.item.ModItems;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvents;
@@ -8,8 +10,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import lemon_juiced.reaped.Reaped;
-import lemon_juiced.reaped.item.ModItems;
 
 import java.util.EnumMap;
 import java.util.List;

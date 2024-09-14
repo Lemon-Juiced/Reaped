@@ -1,5 +1,6 @@
 package lemon_juiced.reaped.item.custom.item;
 
+import lemon_juiced.reaped.item.custom.tier.ModArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -10,11 +11,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import lemon_juiced.reaped.item.custom.tier.ModArmorMaterials;
 
 public class ReaperCloakItem extends ReaperArmorItem {
     public ReaperCloakItem(Properties properties) {
-        super(ArmorItem.Type.CHESTPLATE, properties);
+        super(Type.CHESTPLATE, properties);
     }
 
     @Override

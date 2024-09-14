@@ -88,6 +88,7 @@ dependencies {
     implementation "curse.maven:jei-238222:5718399"
 }
 
+
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
             minecraft_version      : minecraft_version,
