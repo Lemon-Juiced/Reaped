@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "# #",
+    "# #"
   ],
   "key": {
     "#": {
-      "item": "reaped:infernal_steel_nugget"
+      "item": "reaped:black_cloth"
     }
   },
   "result": {
-    "item": "reaped:infernal_steel_ingot",
+    "id": "reaped:reaper_boots",
     "count": 1
   }
 }

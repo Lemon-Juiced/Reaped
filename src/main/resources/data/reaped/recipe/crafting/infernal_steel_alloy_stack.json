@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:black_dye"
+      "item": "minecraft:iron_ingot"
     },
     {
-      "item": "minecraft:leather"
+      "item": "minecraft:netherite_ingot"
     }
   ],
   "result": {
-    "item": "reaped:black_cloth",
+    "id": "reaped:infernal_steel_alloy_stack",
     "count": 1
   }
 }

@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
+    "# #",
     "# #"
   ],
   "key": {
@@ -10,7 +11,7 @@
     }
   },
   "result": {
-    "item": "reaped:reaper_hood",
+    "id": "reaped:reaper_grieves",
     "count": 1
   }
 }

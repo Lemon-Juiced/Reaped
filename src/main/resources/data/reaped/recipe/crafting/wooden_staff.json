@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
-    "# #"
+    "  #",
+    " # ",
+    "#  "
   ],
   "key": {
     "#": {
-      "item": "reaped:black_cloth"
+      "tag": "minecraft:logs"
     }
   },
   "result": {
-    "item": "reaped:reaper_boots",
+    "id": "reaped:wooden_staff",
     "count": 1
   }
 }

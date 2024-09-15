@@ -7,17 +7,17 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "reaped:infernal_steel_ingot"
     },
     "n": {
-      "item": "minecraft:iron_nugget"
+      "item": "reaped:infernal_steel_nugget"
     },
     "/": {
       "item": "reaped:wooden_staff"
     }
   },
   "result": {
-    "item": "reaped:iron_scythe",
+    "id": "reaped:infernal_scythe",
     "count": 1
   }
 }
