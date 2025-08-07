@@ -20,4 +20,8 @@ import net.neoforged.neoforge.common.SimpleTier;
  */
 public class ModTiers {
     public static final Tier SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
+
+    public float getAttackDamageBonus() {
+        return SCYTHE_TIER.getAttackDamageBonus();
+    }
 }
