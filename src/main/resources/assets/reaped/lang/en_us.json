@@ -1,12 +1,19 @@
 {
+  "itemGroup.reaped.items": "Reaped: Items",
+  "itemGroup.reaped.arsenal": "Reaped: Arsenal",
+
   "item.reaped.black_cloth": "Black Cloth",
+  "item.reaped.golden_egg": "Golden Egg",
   "item.reaped.infernal_steel_alloy_stack": "Infernal Steel Alloy Stack",
   "item.reaped.infernal_steel_ingot": "Infernal Steel Ingot",
   "item.reaped.infernal_steel_nugget": "Infernal Steel Nugget",
+  "item.reaped.soul_steel_ingot": "Soul Steel Ingot",
+  "item.reaped.soul_steel_nugget": "Soul Steel Nugget",
   "item.reaped.wooden_staff": "Wooden Staff",
 
   "item.reaped.infernal_scythe": "Infernal Scythe",
   "item.reaped.iron_scythe": "Iron Scythe",
+  "item.reaped.soul_scythe": "Soul Scythe",
 
   "item.reaped.reaper_hood": "Reaper Hood",
   "item.reaped.reaper_cloak": "Reaper Cloak",
@@ -18,8 +25,7 @@
   "tooltip.reaped.iron_scythe_1": "The Grim-Gardener's Best Friend",
   "tooltip.reaped.iron_scythe_2": "Breaks an Area of Vegetation",
   "tooltip.reaped.reaper_armor_1": "Full Set Grants Speed to the Wearer",
-  "tooltip.reaped.reaper_armor_2": "+5% Beheading Chance Per Armor Piece to Scythe Drops",
-
-  "itemGroup.reaped.items": "Reaped: Items",
-  "itemGroup.reaped.arsenal": "Reaped: Arsenal"
+  "tooltip.reaped.reaper_armor_2": "+5% Drop Chance Per Armor Piece to Infernal and Soul Scythe Drops",
+  "tooltip.reaped.soul_scythe_1": "Soul-Stealing Weapon",
+  "tooltip.reaped.soul_scythe_2": "+5% Chance to Drop A Mob's Soul Per Armor Piece of Reaper Armor Set"
 }

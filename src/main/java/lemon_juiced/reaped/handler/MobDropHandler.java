@@ -2,7 +2,10 @@ package lemon_juiced.reaped.handler;
 
 import lemon_juiced.reaped.item.ModItems;
 import lemon_juiced.reaped.item.custom.item.InfernalScytheItem;
+import lemon_juiced.reaped.item.custom.item.SoulScytheItem;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Skeleton;
@@ -30,34 +33,53 @@ public class MobDropHandler {
 
         var drops = event.getDrops();
         var attacker = event.getSource().getEntity();
-        int mobHeadDropChance = 0; // Out of 100
+        int mobDropChance = 0; // Out of 100
         Random random = new Random();
 
         if(attacker instanceof Player playerEntity){
             Item itemInHand = playerEntity.getItemInHand(InteractionHand.MAIN_HAND).getItem();
 
-            // Increments the mobHeadDropChance by 5% per Reaper Armor Piece
-            if (playerEntity.getInventory().getArmor(3).getItem() == ModItems.REAPER_HOOD.get()) mobHeadDropChance += 5;
-            if (playerEntity.getInventory().getArmor(2).getItem() == ModItems.REAPER_CLOAK.get()) mobHeadDropChance += 5;
-            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_GRIEVES.get()) mobHeadDropChance += 5;
-            if (playerEntity.getInventory().getArmor(0).getItem() == ModItems.REAPER_BOOTS.get()) mobHeadDropChance += 5;
+            // Increments the mobDropChance by 5% per Reaper Armor Piece
+            if (playerEntity.getInventory().getArmor(3).getItem() == ModItems.REAPER_HOOD.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(2).getItem() == ModItems.REAPER_CLOAK.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_GRIEVES.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(0).getItem() == ModItems.REAPER_BOOTS.get()) mobDropChance += 5;
 
             if (itemInHand instanceof InfernalScytheItem){
-                if(entity instanceof Creeper && random.nextInt(0, 100) < mobHeadDropChance)
+                if(checkMobDropConditions(entity, Creeper.class, mobDropChance))
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.CREEPER_HEAD)));
 
-                if((entity instanceof Piglin || entity instanceof PiglinBrute) && random.nextInt(0, 100) < mobHeadDropChance)
+                if(checkMobDropConditions(entity, Piglin.class, mobDropChance) || checkMobDropConditions(entity, PiglinBrute.class, mobDropChance))
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.PIGLIN_HEAD)));
 
-                if(entity instanceof Skeleton && random.nextInt(0, 100) < mobHeadDropChance)
+                if(checkMobDropConditions(entity, Skeleton.class, mobDropChance))
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.SKELETON_SKULL)));
 
-                if(entity instanceof WitherSkeleton && random.nextInt(0, 100) < mobHeadDropChance)
+                if(checkMobDropConditions(entity, WitherSkeleton.class, mobDropChance))
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.WITHER_SKELETON_SKULL)));
 
-                if(entity instanceof Zombie && random.nextInt(0, 100) < mobHeadDropChance)
+                if(checkMobDropConditions(entity, Zombie.class, mobDropChance))
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.ZOMBIE_HEAD)));
+
+            } else if (itemInHand instanceof SoulScytheItem){
+                if(checkMobDropConditions(entity, Zombie.class, mobDropChance + 50))
+                    drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.ZOMBIE_SPAWN_EGG))); // This is temporary test
             }
         }
+    }
+
+    /**
+     * Check if a few conditions are true:
+     * 1. The entity is an instance of the given mob class
+     * 2. A random integer between 0 and 100 is less than the mobHeadDropChance
+     *
+     * @param entity The entity that was killed
+     * @param mobClass The mob class to check against
+     * @param mobHeadDropChance The chance out of 100 that the mob head will drop
+     * @return true if the mob drop conditions are met, false otherwise
+     */
+    public static boolean checkMobDropConditions(LivingEntity entity, Class<? extends LivingEntity> mobClass, int mobHeadDropChance){
+        Random random = new Random();
+        return mobClass.isInstance(entity) && random.nextInt(0, 100) < mobHeadDropChance;
     }
 }

@@ -28,14 +28,18 @@ public class ModCreativeTabs {
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == REAPED_ITEMS_TAB.get()) {
             event.accept(ModItems.BLACK_CLOTH.get());
+            event.accept(ModItems.GOLDEN_EGG.get());
             event.accept(ModItems.INFERNAL_STEEL_ALLOY_STACK.get());
             event.accept(ModItems.INFERNAL_STEEL_INGOT.get());
             event.accept(ModItems.INFERNAL_STEEL_NUGGET.get());
+            event.accept(ModItems.SOUL_STEEL_INGOT.get());
+            event.accept(ModItems.SOUL_STEEL_NUGGET.get());
             event.accept(ModItems.WOODEN_STAFF.get());
         }
         else if (event.getTab() == REAPED_ARSENAL_TAB.get()) {
             event.accept(ModItems.INFERNAL_SCYTHE.get());
             event.accept(ModItems.IRON_SCYTHE.get());
+            event.accept(ModItems.SOUL_SCYTHE.get());
             event.accept(ModItems.REAPER_HOOD.get());
             event.accept(ModItems.REAPER_CLOAK.get());
             event.accept(ModItems.REAPER_GRIEVES.get());

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n##",
+    "n /",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:soul_steel_ingot"
+    },
+    "n": {
+      "item": "reaped:soul_steel_nugget"
+    },
+    "/": {
+      "item": "reaped:wooden_staff"
+    }
+  },
+  "result": {
+    "id": "reaped:soul_scythe",
+    "count": 1
+  }
+}

@@ -19,9 +19,24 @@ import net.neoforged.neoforge.common.SimpleTier;
  * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
  */
 public class ModTiers {
-    public static final Tier SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
+    public static final Tier INFERNAL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
+    public static final Tier SOUL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, getWeightedAverage(250, 1561, .5), 7.0F, 4.0F, 12, () -> Ingredient.of(ModItems.SOUL_STEEL_INGOT.get()));
 
     public float getAttackDamageBonus() {
-        return SCYTHE_TIER.getAttackDamageBonus();
+        return INFERNAL_SCYTHE_TIER.getAttackDamageBonus();
+    }
+
+    /**
+     * Gets the average of two integers, weighted towards the higher value.
+     *
+     * @param a The first integer
+     * @param b The second integer
+     * @param weightCoefficient A coefficient between 0 and 1, representing how much more weight to give to the higher value (b).
+     * @return The weighted average of the two integers.
+     */
+    private static int getWeightedAverage(int a, int b, double weightCoefficient) {
+        // Clamp weightCoefficient between 0 and 1
+        double w = Math.max(0, Math.min(1, weightCoefficient));
+        return (int) Math.round(a * (1 - w) + b * w);
     }
 }
