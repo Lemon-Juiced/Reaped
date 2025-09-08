@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#",
-    "D",
-    "#"
+    " # ",
+    "LDL",
+    " # "
   ],
   "key": {
     "#": {
       "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
     },
     "D": {
       "item": "minecraft:diamond"

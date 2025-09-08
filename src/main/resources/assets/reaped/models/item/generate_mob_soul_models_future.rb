@@ -15,7 +15,8 @@ mob_souls.each do |mob|
   model = {
     "parent" => "item/generated",
     "textures" => {
-      "layer0" => "reaped:item/mob_soul",
+      "layer0" => "reaped:item/mob_soul_background",
+      "layer1" => "minecraft:item/#{mob}_spawn_egg"
     }
   }
   File.write("./#{mob}_soul.json", JSON.pretty_generate(model))

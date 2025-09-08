@@ -1,7 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reaped:item/mob_soul_background",
-    "layer1": "minecraft:item/disc_fragment_5"
+    "layer0": "reaped:item/mob_soul"
   }
 }

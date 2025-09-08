@@ -28,7 +28,7 @@ public class ReapedCreativeTabs {
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> REAPED_SOULS_TAB = CREATIVE_MODE_TABS.register("reaped_souls", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.reaped.arsenal"))
+            .title(Component.translatable("itemGroup.reaped.souls"))
             .icon(() -> new ItemStack(ReapedItems.SOUL_SCYTHE.get()))
             .build());
 
