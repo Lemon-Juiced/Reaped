@@ -1,4 +1,4 @@
-package lemon_juiced.reaped.item.custom.souls;
+package lemon_juiced.reaped.item.custom.item;
 
 import net.minecraft.world.item.Item;
 

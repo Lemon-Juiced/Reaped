@@ -61,8 +61,8 @@ public class MobDropHandler {
                     drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.ZOMBIE_HEAD)));
 
             } else if (itemInHand instanceof SoulScytheItem){
-                if(checkMobDropConditions(entity, Zombie.class, mobDropChance + 50))
-                    drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(Items.ZOMBIE_SPAWN_EGG))); // This is temporary test
+                if(checkMobDropConditions(entity, Zombie.class, mobDropChance))
+                    drops.add(new ItemEntity(level, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ReapedItems.ZOMBIE_SOUL.get())));
             }
         }
     }

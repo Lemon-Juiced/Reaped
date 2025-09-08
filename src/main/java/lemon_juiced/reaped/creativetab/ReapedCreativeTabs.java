@@ -2,13 +2,12 @@ package lemon_juiced.reaped.creativetab;
 
 import lemon_juiced.reaped.Reaped;
 import lemon_juiced.reaped.item.ReapedItems;
-import lemon_juiced.reaped.item.custom.souls.SoulItem;
+import lemon_juiced.reaped.item.custom.item.SoulItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
