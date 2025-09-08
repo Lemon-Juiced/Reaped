@@ -1,6 +1,6 @@
 package lemon_juiced.reaped.item.custom.item;
 
-import lemon_juiced.reaped.item.custom.tier.ModTiers;
+import lemon_juiced.reaped.item.custom.tier.ReapedTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
@@ -12,7 +12,7 @@ import java.util.List;
 public class InfernalScytheItem extends DurabilitylessSwordItem {
 
     public InfernalScytheItem(Item.Properties properties) {
-        super(ModTiers.INFERNAL_SCYTHE_TIER, properties);
+        super(ReapedTiers.INFERNAL_SCYTHE_TIER, properties);
     }
 
     @Override

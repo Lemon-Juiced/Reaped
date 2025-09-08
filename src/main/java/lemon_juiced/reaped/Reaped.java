@@ -1,9 +1,9 @@
 package lemon_juiced.reaped;
 
-import lemon_juiced.reaped.creativetab.ModCreativeTabs;
+import lemon_juiced.reaped.creativetab.ReapedCreativeTabs;
 import lemon_juiced.reaped.handler.MobDropHandler;
-import lemon_juiced.reaped.item.ModItems;
-import lemon_juiced.reaped.item.custom.tier.ModArmorMaterials;
+import lemon_juiced.reaped.item.ReapedItems;
+import lemon_juiced.reaped.item.custom.tier.ReapedArmorMaterials;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -24,12 +24,12 @@ public class Reaped {
         modEventBus.addListener(this::commonSetup);
 
         // Register Items & Armor Materials
-        ModItems.register(modEventBus);
-        ModArmorMaterials.REGISTRY.register(modEventBus);
+        ReapedItems.register(modEventBus);
+        ReapedArmorMaterials.REGISTRY.register(modEventBus);
 
         // Register Creative Tab
-        ModCreativeTabs.register(modEventBus);
-        modEventBus.addListener(ModCreativeTabs::registerTabs);
+        ReapedCreativeTabs.register(modEventBus);
+        modEventBus.addListener(ReapedCreativeTabs::registerTabs);
 
         modEventBus.addListener(this::commonSetup);
 

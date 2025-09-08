@@ -1,11 +1,10 @@
 package lemon_juiced.reaped.handler;
 
-import lemon_juiced.reaped.item.ModItems;
+import lemon_juiced.reaped.item.ReapedItems;
 import lemon_juiced.reaped.item.custom.item.InfernalScytheItem;
 import lemon_juiced.reaped.item.custom.item.SoulScytheItem;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Skeleton;
@@ -40,10 +39,10 @@ public class MobDropHandler {
             Item itemInHand = playerEntity.getItemInHand(InteractionHand.MAIN_HAND).getItem();
 
             // Increments the mobDropChance by 5% per Reaper Armor Piece
-            if (playerEntity.getInventory().getArmor(3).getItem() == ModItems.REAPER_HOOD.get()) mobDropChance += 5;
-            if (playerEntity.getInventory().getArmor(2).getItem() == ModItems.REAPER_CLOAK.get()) mobDropChance += 5;
-            if (playerEntity.getInventory().getArmor(1).getItem() == ModItems.REAPER_GRIEVES.get()) mobDropChance += 5;
-            if (playerEntity.getInventory().getArmor(0).getItem() == ModItems.REAPER_BOOTS.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(3).getItem() == ReapedItems.REAPER_HOOD.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(2).getItem() == ReapedItems.REAPER_CLOAK.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(1).getItem() == ReapedItems.REAPER_GRIEVES.get()) mobDropChance += 5;
+            if (playerEntity.getInventory().getArmor(0).getItem() == ReapedItems.REAPER_BOOTS.get()) mobDropChance += 5;
 
             if (itemInHand instanceof InfernalScytheItem){
                 if(checkMobDropConditions(entity, Creeper.class, mobDropChance))

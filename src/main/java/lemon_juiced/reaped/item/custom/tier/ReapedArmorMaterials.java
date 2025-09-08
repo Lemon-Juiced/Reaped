@@ -1,7 +1,7 @@
 package lemon_juiced.reaped.item.custom.tier;
 
 import lemon_juiced.reaped.Reaped;
-import lemon_juiced.reaped.item.ModItems;
+import lemon_juiced.reaped.item.ReapedItems;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvents;
@@ -14,7 +14,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.EnumMap;
 import java.util.List;
 
-public final class ModArmorMaterials {
+public final class ReapedArmorMaterials {
     public static final DeferredRegister<ArmorMaterial> REGISTRY = DeferredRegister.create(Registries.ARMOR_MATERIAL, Reaped.MOD_ID);
 
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> REAPER = REGISTRY.register("reaper", () -> new ArmorMaterial(
@@ -25,7 +25,7 @@ public final class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 1);
             }),
             7, SoundEvents.ARMOR_EQUIP_LEATHER,
-            () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()),
+            () -> Ingredient.of(ReapedItems.INFERNAL_STEEL_INGOT.get()),
             List.of(
                     new ArmorMaterial.Layer(Reaped.resource("reaper"), "", false)
             ),

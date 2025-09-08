@@ -1,6 +1,6 @@
 package lemon_juiced.reaped.item.custom.item;
 
-import lemon_juiced.reaped.item.custom.tier.ModArmorMaterials;
+import lemon_juiced.reaped.item.custom.tier.ReapedArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -42,7 +42,7 @@ public class ReaperCloakItem extends ReaperArmorItem {
     }
 
     private boolean hasCorrectArmorOn(Player player){
-        DeferredHolder<ArmorMaterial, ArmorMaterial> material = ModArmorMaterials.REAPER;
+        DeferredHolder<ArmorMaterial, ArmorMaterial> material = ReapedArmorMaterials.REAPER;
         if(player.getInventory().getArmor(0).getItem() == Items.AIR ||
                 (player.getInventory().getArmor(1).getItem() == Items.AIR) ||
                 (player.getInventory().getArmor(2).getItem() == Items.AIR) ||

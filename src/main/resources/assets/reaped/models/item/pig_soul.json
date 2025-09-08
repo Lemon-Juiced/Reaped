@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reaped:item/mob_soul_background",
+    "layer1": "minecraft:item/carrot_on_a_stick"
+  }
+}

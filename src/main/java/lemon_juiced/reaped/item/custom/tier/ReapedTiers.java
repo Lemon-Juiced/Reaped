@@ -1,6 +1,6 @@
 package lemon_juiced.reaped.item.custom.tier;
 
-import lemon_juiced.reaped.item.ModItems;
+import lemon_juiced.reaped.item.ReapedItems;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -18,9 +18,9 @@ import net.neoforged.neoforge.common.SimpleTier;
  * GOLD(0, 32, 12.0F, 0.0F, 22, () -> {return Ingredient.of(Items.GOLD_INGOT);}),
  * NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {return Ingredient.of(Items.NETHERITE_INGOT);});
  */
-public class ModTiers {
-    public static final Tier INFERNAL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ModItems.INFERNAL_STEEL_INGOT.get()));
-    public static final Tier SOUL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, getWeightedAverage(250, 1561, .5), 7.0F, 4.0F, 12, () -> Ingredient.of(ModItems.SOUL_STEEL_INGOT.get()));
+public class ReapedTiers {
+    public static final Tier INFERNAL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, Integer.MAX_VALUE, 8.0F, 5.0F, 15, () -> Ingredient.of(ReapedItems.INFERNAL_STEEL_INGOT.get()));
+    public static final Tier SOUL_SCYTHE_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, getWeightedAverage(250, 1561, .5), 7.0F, 4.0F, 12, () -> Ingredient.of(ReapedItems.SOUL_STEEL_INGOT.get()));
 
     public float getAttackDamageBonus() {
         return INFERNAL_SCYTHE_TIER.getAttackDamageBonus();
