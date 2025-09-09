@@ -1,0 +1,16 @@
+{
+  "name": "Spirit Box",
+  "icon": "reaped:spirit_box",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Spirit Boxes are essential for fully harnessing the power of souls."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/spirit_box",
+      "text": "Above is the crafting recipe to acquire a Spirit Box."
+    }
+  ]
+}

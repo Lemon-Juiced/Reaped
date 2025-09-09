@@ -1,0 +1,16 @@
+{
+  "name": "Spirit Box",
+  "icon": "reaped:spirit_box",
+  "category": "reaped:souls_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Spirit Boxes can be combined with Spawn Eggs (of the same type) to create Mob Spawners. The Spawner type can be set with the Spawn Eggs."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/spawners/allay_spawner",
+      "text": "Above is an example crafting recipe to acquire a spawner from spawn eggs."
+    }
+  ]
+}

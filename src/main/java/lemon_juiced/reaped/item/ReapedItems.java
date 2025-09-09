@@ -23,6 +23,7 @@ public class ReapedItems {
     public static final Supplier<Item> INFERNAL_STEEL_NUGGET = ITEMS.register("infernal_steel_nugget", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> SOUL_STEEL_INGOT = ITEMS.register("soul_steel_ingot", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> SOUL_STEEL_NUGGET = ITEMS.register("soul_steel_nugget", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> SPIRIT_BOX = ITEMS.register("spirit_box", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> WOODEN_STAFF = ITEMS.register("wooden_staff", () -> new Item(new Item.Properties()));
 
     public static final Supplier<Item> IRON_SCYTHE = ITEMS.register("iron_scythe", () -> new IronScytheItem(new Item.Properties().attributes(IronScytheItem.createAttributes(Tiers.IRON, -2.0F, -1.0F))));

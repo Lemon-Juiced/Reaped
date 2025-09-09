@@ -1,0 +1,16 @@
+{
+  "name": "Mob Souls",
+  "icon": "reaped:allay_soul",
+  "category": "reaped:souls_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mob Souls are a component that can be acquired from killing mobs, using a Soul Scythe. They can be used alongside a golden egg to create Spawn Eggs."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/spawn_eggs/allay_spawn_egg",
+      "text": "Above is an example crafting recipe to acquire a spawn egg from souls."
+    }
+  ]
+}

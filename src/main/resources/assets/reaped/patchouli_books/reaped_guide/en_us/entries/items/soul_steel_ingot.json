@@ -1,0 +1,26 @@
+{
+    "name": "Soul Steel Ingot",
+  "icon": "reaped:soul_steel_ingot",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Soul Steel Ingot is one of the most important crafting items in Reaped. It is used not only in the Soul Steel Scythe, but also in Spirit Boxes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_steel_ingot",
+      "text": "Above is the crafting recipe to acquire your initial Soul Steel Ingots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_steel_ingot",
+      "text": "Above is the crafting recipe to acquire Soul Steel Ingots if you happen to already have Soul Steel Nuggets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_steel_ingot_from_souls",
+      "text": "Once you finally acquire some souls, they can be used to craft Soul Steel Ingots directly in a slightly cheaper recipe."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Golden Egg",
+  "icon": "reaped:golden_egg",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Golden Eggs are essential for harnessing the power of souls."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/golden_egg",
+      "text": "Above is the crafting recipe to acquire a Golden Egg."
+    }
+  ]
+}

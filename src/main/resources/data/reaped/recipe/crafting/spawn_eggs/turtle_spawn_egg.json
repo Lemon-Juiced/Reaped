@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:turtle_soul"
+    },
+    "E": {
+      "item": "reaped:golden_egg"
+    }
+  },
+  "result": {
+    "id": "minecraft:turtle_spawn_egg",
+    "count": 1
+  }
+}

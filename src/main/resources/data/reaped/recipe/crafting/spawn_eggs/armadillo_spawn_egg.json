@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#E#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:armadillo_soul"
+    },
+    "E": {
+      "item": "reaped:golden_egg"
+    }
+  },
+  "result": {
+    "id": "minecraft:armadillo_spawn_egg",
+    "count": 1
+  }
+}

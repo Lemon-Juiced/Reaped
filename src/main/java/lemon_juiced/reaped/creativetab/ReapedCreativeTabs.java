@@ -41,6 +41,7 @@ public class ReapedCreativeTabs {
             event.accept(ReapedItems.INFERNAL_STEEL_NUGGET.get());
             event.accept(ReapedItems.SOUL_STEEL_INGOT.get());
             event.accept(ReapedItems.SOUL_STEEL_NUGGET.get());
+            event.accept(ReapedItems.SPIRIT_BOX.get());
             event.accept(ReapedItems.WOODEN_STAFF.get());
         }
         else if (event.getTab() == REAPED_ARSENAL_TAB.get()) {

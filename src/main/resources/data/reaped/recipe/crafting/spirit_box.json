@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "NSN",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "reaped:soul_steel_ingot"
+    },
+    "N": {
+      "item": "reaped:soul_steel_nugget"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "reaped:spirit_box",
+    "count": 1
+  }
+}

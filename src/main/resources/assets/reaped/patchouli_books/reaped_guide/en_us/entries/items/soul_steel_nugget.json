@@ -1,0 +1,21 @@
+{
+  "name": "Soul Steel Nugget",
+  "icon": "reaped:soul_steel_nugget",
+  "category": "reaped:items_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Soul Steel Nugget is one of the most important crafting items in Reaped. It is used not only in the Soul Steel Scythe, but also in Spirit Boxes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_steel_nuggets",
+      "text": "Above is the crafting recipe to acquire Soul Steel Nuggets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_steel_ingot_from_nuggets",
+      "text": "You can also convert your Soul Steel Nuggets back to Soul Steel Ingots as seen above."
+    }
+  ]
+}

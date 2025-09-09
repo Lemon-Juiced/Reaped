@@ -1,0 +1,16 @@
+{
+  "name": "Soul Scythe",
+  "icon": "reaped:soul_scythe",
+  "category": "reaped:arsenal_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Soul Scythe is a rather expensive weapon item in Reaped. For each piece of Reaper Armor the chance for a soul to drops increases by 5%, starting from 0%.$(br)\"It can be used to steal the souls of almost all living things.\" - The Grim Reaper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reaped:crafting/soul_scythe",
+      "text": "Above is the crafting recipe to acquire the Soul Scythe."
+    }
+  ]
+}

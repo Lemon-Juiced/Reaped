@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E#E",
+    "#S#",
+    "E#E"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:fox_spawn_egg"
+    },
+    "S": {
+      "item": "reaped:spirit_box"
+    },
+    "#": {
+      "item": "reaped:soul_steel_ingot"
+    }
+  },
+  "result": {
+    "id": "minecraft:spawner",
+    "count": 1
+  }
+}
